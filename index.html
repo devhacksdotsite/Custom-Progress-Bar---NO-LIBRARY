@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Progress Bar</title>
+  </head>
+  <body>
+    <div class="custom-progress-bar" data-label="0%" style="--width: 0"></div>
+
+    <form class="form">
+      <label for="name">First Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        data-valid="0"
+        data-progress-toggle="0"
+      />
+
+      <label for="lastname">Last Name:</label>
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        data-valid="0"
+        data-progress-toggle="0"
+      />
+
+      <label for="email">email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        data-valid="0"
+        data-progress-toggle="0"
+      />
+
+      <button type="submit" id="btn">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 27%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* start progress bar styles */
+.custom-progress-bar {
+  width: 45%;
+  margin: 20vh auto 10px;
+  height: 2.5em;
+  border-radius: 100px;
+  background: linear-gradient(rgba(86, 166, 43, 0.4), rgba(86, 166, 43, 0.4));
+}
+
+.custom-progress-bar::before {
+  content: attr(data-label);
+  display: flex;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  height: 2.4em;
+  border-radius: 100px;
+  align-items: center;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 0em;
+  max-width: 100%;
+  background: #56a62b;
+}
+/* end progress bar styles */
+
+/* start form styles */
+.form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 10px 3px 39px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 3px 39px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 3px 39px 8px rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+}
+
+.form label {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+.form input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.form #btn {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  padding: 10px;
+  white-space: normal;
+  text-transform: uppercase;
+  background: #56a62b;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* end form styles */
